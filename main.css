@@ -1,0 +1,348 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+body {
+  font-family: sans-serif;
+  padding: 2rem;
+}
+
+@font-face{
+    font-family: 'Noto';
+    src: url(font/NotoSans-Regular.ttf);
+
+}
+
+@font-face{
+    font-family: 'NotoB';
+    src: url(font/NotoSans-Bold.ttf);
+
+}
+
+.font {
+
+  font-family: Noto;
+}
+
+h2 {
+
+  
+ 
+}
+
+.list-wrapper {
+  position:relative;
+}
+.list-item-wrapper {
+  margin-top:10px;
+  position:relative;
+}
+
+.list-bullet {
+  float:left;
+  margin-right:20px;
+  background:#CC6969;
+  height:10px;
+  width:10px;
+  line-height:30px;
+  border-radius:100px;
+}
+
+.list-bullet:hover {
+  color: #EDCDD1;
+  float:left;
+  margin-right:20px;
+  background:#EDCDD1;
+  height:10px;
+  width:10px;
+  line-height:30px;
+  border-radius:100px;
+}
+
+.list-bullet-number {
+  float:left;
+  margin-right:20px;
+  line-height:30px;
+  font-weight:1000;
+  font-size: 20px;
+  color: #CC6969;
+  font-family: Noto;
+  background:#FFFFFF;
+  height:30px;
+  width:30px;
+  line-height:30px;
+  text-align:center;
+  border-radius:100px;
+}
+
+.list-bullet-number:hover {
+
+  float:left;
+  margin-right:20px;
+  line-height:30px;
+  font-weight:1000;
+  font-size: 20px;
+  color: #EDCDD1;
+  font-family: Noto;
+  background:#FFFFFF;
+  height:30px;
+  width:30px;
+  line-height:30px;
+  text-align:center;
+  border-radius:100px;
+
+}
+
+
+.list-item {
+  display:table-row;
+  vertical-align:middle;
+}
+
+.list-title {
+  font-weight:400;
+  color: #000000;
+  font-family: Noto;
+  font-size: 14px;
+}
+.list-text {
+    font-weight:200;
+    color: #757575;
+    font-family: Noto;
+     font-size: 9px;
+}
+.red-line {
+  background: #B9B4B4;
+  z-index:-1;
+  width:1.2px;
+  height:100%;
+  position:absolute;
+  left:5px;
+}
+
+.red-line2 {
+  background: #B9B4B4;
+  z-index:-1;
+  width:1.2px;
+  height:100%;
+  position:absolute;
+  left:15px;
+}
+.white-line {
+  background:#FFF;
+  z-index:-1;
+  top:0px;
+  width:1px;
+  height:100%;
+  position:absolute;
+  left:15px;
+}
+
+.button2 {
+  background-color: #FFFFFF; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #B4B4B4;
+  border-radius: 15px;
+  color: #000000;
+  font-family: NotoB;
+  font: bold;
+  font-size: 14px;
+}
+
+.button3 {
+  background-color: #CC6969; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 15px;
+  color: #FFFFFF;
+  font-family: NotoB;
+  font: bold;
+  font-size: 16px;
+}
+
+.button4 {
+  background-color: #FFFFFF; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 15px;
+  color: #7A7A7A;
+  font-family: Noto;
+  font: bold;
+  font-size: 14px;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid gray;
+  margin-bottom: 1.2rem;
+}
+
+
+.nav {
+border-bottom : 1px solid #C8C1B6;
+text-align : right;
+height : auto;
+min-height : 70px;
+line-height : 70px;
+}
+
+.menu {
+  margin: 0 0 0 0;
+  padding-top: 5px;
+}
+
+.menu a {
+    clear: right;
+    margin: 0 15px;
+    line-height: 70px;
+    font-family: Noto;
+    color: #3D2C1E;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.menu a:hover {
+   color: #CC6969;
+}
+
+.lnk {
+  color: #334E93;
+}
+
+.lnk:hover {
+  color: #517E9F;
+  text-decoration: underline;
+}
+
+
+label{
+  
+  font-family: Noto;
+  color: #535353;
+  font-size: 14px;
+}
+
+section:not([id]) {
+  margin: 1em 0;
+  padding: 0.5em 0;
+  border-top: 1px solid #333;
+}
+
+
+section h3 {
+  margin-bottom: 0;
+}
+
+section p {
+  margin-top: 0;
+}
+
+section code {
+  background-color: #EEE;
+  padding: 0.5em 0.75em;
+}
+
+.pl{
+  color: #464646;
+  font-family: NotoB;
+  font: bold;
+  font-size: 24px;
+
+}
+
+.pm{
+  color: #464646;
+  font-family: NotoB;
+  font: bold;
+  font-size: 18px;
+}
+
+.ps{
+  color: #7A7A7A;
+  font-family: Noto;
+ font: bold;
+  font-size: 12px;
+
+}
+
+.para {
+  color: #2D2D2D;
+  font-family: Noto;
+
+  font-size: 12px;
+}
+
+.para2 {
+  color: #2D2D2D;
+  font-family: Noto;
+ font: lighter;
+  font-size: 9px;
+}
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+ul {
+  list-style-type: disc;
+  color: #CC6969;
+  font-family: Noto;
+}
+
+ol.d {
+  list-style-type: number;
+  font-family: Noto;
+  color: #2D2D2D;
+}
+
+/* Styling for the navigation button */
+.button-nav {
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  color: #517E9F;
+  background-color: #333;
+  border-radius: 0.25em;
+  text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: #999;
+}
+
+
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+
+
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
