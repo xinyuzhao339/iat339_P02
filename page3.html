@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,9 +30,9 @@
         <label for="toggle">&#9776;</label>
         <input type="checkbox" id="toggle"/>
         <div class="menu">
-          <a href="index.html">Page1</a>
+          <a class="active" href="index.html">Page1</a>
           <a href="page2.html">Page2</a>
-          <a class="active" href="page3.html">Page3</a>
+          <a href="page3.html">Page3</a>
         
         <input type="text" placeholder="Search.." class="search">
          </div>
@@ -49,6 +50,44 @@
   
 
 
+   
+
+    <div class="grid-row">
+      <div class="square"> </div>  
+    </div>
+
+
+     <div class="grid-col-1of2">
+
+       <h3>Other content</h3>
+          
+          <ol>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Robot" target="_blank">Wikipedia on Robots</a>
+            </li>
+            <li>
+              <a href="https://www.shutterstock.com/search/robots?search_source=base_keyword" target="_blank">Photos of robots</a>
+            </li>
+          </ol>
+
+       <div class="grid-col-2of3">
+        <h3>The code of how robots deal with humans:</h3>
+
+            <code>
+              # Human protocol<br>
+              robot.see("human", function(seen) {<br>
+              seen.destroy();<br>
+              });<br>
+            </code>
+       </div>
+
+        <div class="grid-col-1of2">
+        <h3>What the robot does as a result:</h3>
+
+            <samp>EXTERMINATE! EXTERMINATE! EXTERMINATE!</samp>
+          </div>
+
+      </div>
 
 
 <footer>
