@@ -1,0 +1,297 @@
+
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+[class^='grid-col-'] {
+  float: left;
+  padding: 0; 
+  
+}
+
+.grid-col-1of2, .grid-col-1of4, .grid-col-1of3, .grid-col-2of3 {
+  width: 100%;
+}
+
+.grid-row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.grid-col-1of4 > .nav-main-item {
+  width: 100%;
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+  [class^='grid-col-'] {
+  float: left;
+  padding: 0; 
+  
+}
+
+
+.grid-col-1of2, .grid-col-1of4, .grid-col-1of3, .grid-col-2of3 {
+  width: 100%;
+}
+
+.grid-col-2of2 {
+  width: 100%;
+}
+
+.grid-row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.grid-col-1of4 > .nav-main-item {
+  width: 100%;
+}
+
+
+
+   label {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #B9B4B4;
+        margin: 0;
+     
+    }
+
+    #toggle:checked + .menu {
+        display: block;
+    }
+    
+    .column {
+        width: 100%;
+    } 
+    .square {
+ 
+  width: 100%;
+ 
+}
+.item7 {
+   grid-column-start: 1;
+  grid-column-end: 6;
+}
+
+
+
+.container6 {
+  width: 100%;
+
+  margin-top: 105%
+
+}
+
+.container4 {
+  width: 100%;
+  margin-top: 105%
+}
+
+
+.container5 {
+  width: 100%;
+
+
+}
+
+
+.vl2 {
+ opacity: 0;
+}
+/* tex
+.container4 {
+  width: 100%;
+  margin-top: 0;
+}
+
+/* style the container */
+.container7 {
+width: 100%;
+} 
+
+
+.column5 {
+
+  width: 33%;
+  padding: 10px;
+  height: 100px; /* Should be removed. Only for demonstration */
+}
+ 
+.item6 {
+   grid-column-start: 1;
+  grid-column-end: 6;
+  
+}
+.size {
+ 
+  width: 100%;
+  margin-left: -50px;
+ 
+}
+
+}
+
+
+
+@media only screen and (max-width: 500px) {
+
+    label {
+        display: block;
+        cursor: pointer;
+    }
+ 
+   h1 {
+    margin-left: 10%;
+    margin-top: 5px;
+    }
+
+   .container2 {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #B9B4B4;
+        margin: 0;
+        background-color: #EAEAEB;
+    }
+
+    #toggle:checked + .menu {
+        display: block;
+    }
+    
+    .modal-content1 {
+        width: 100%;
+    }
+
+    .text-block2 {
+  
+     top: 160px;
+     left: 0;
+     margin-bottom: 20%;
+
+    }
+
+
+    .sh{
+      margin-right: 10%;
+     
+    }
+
+    .p1{
+       margin-top: 35px;
+    }
+
+    .column {
+        width: 100%;
+    }   
+
+    .column1 {
+        width: 100%;
+    }
+
+    .square {
+   
+    width: 100%;
+   }
+
+    .square2 {
+   
+    width: 100%;
+   }
+
+
+
+
+.item3 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+
+}
+
+.item2 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.item1-4 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+
+
+}
+
+.item2-4 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+
+}
+
+
+  .search {
+  float: left;
+  margin-left: 20%;
+
+
+    padding: 6px;
+    border-radius: 20px;
+    width: 25%; 
+    }
+
+  .grid-col-2of3 {
+    width: 66.666%;
+  }
+
+  .grid-col-1of3 {
+    width: 33.333%;
+    padding-left: 1rem;
+  }
+
+  .grid-col-1of4 {
+    width: 25%;
+  }
+
+
+}
+
+@media (min-width: 48.75em) {
+
+  .grid-col-1of2 {
+    width: 50%;
+  }
+
+  .grid-col-1of2:last-of-type {
+    padding-left: 1rem;
+  }
+
+  .grid-col-1of4 {
+    width: 50%;
+  }
+
+}

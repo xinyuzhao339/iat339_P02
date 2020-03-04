@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AZ. Max Infinity Series</title>
+    <link rel="stylesheet"  href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grid.css">
+
+</head>
+
+<body>
+
+<div class="pos">
+    <div class="nav">
+
+      <div class="container2">
+        
+        <h1>AZ.</h1> 
+           <a href="ShoppingCard.html"><img class="sh" src="img/shopping.png" alt="shopping" width="30" height="30"></a>  
+           <a href="Sign In.html"><p class="login">login</p></a>
+        
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle"/>
+         <div class="menu">
+          <a href="home.html">home</a>
+          <a class="active" href="collections.html">collection</a>
+          <a href="contact.html">contact</a>
+
+         </div>
+        </div>
+      </div>
+</div>
+
+<div class="grid-container">
+  <div class="item1">
+    <h2>Title</h2>
+  </div>
+
+ <div class="item6">
+
+   <div class="size">
+     <div class="mySlides">
+      <img src="img/New1.png" alt="shopping" style="height: auto; width: 100%;">
+    </div> 
+
+    <div class="mySlides">
+      <img src="img/New2.png" alt="shopping" style="height: auto; width: 100%;">
+    </div>  
+
+    <div class="mySlides">
+      <img src="img/New3.png" alt="shopping" style="height: auto; width: 100%;">
+    </div>  
+
+</div>
+
+<div class="row2">
+ <div class="con">
+
+  <div class="column5">
+    <img class="demo cursor" src="img/New1-Small.png" alt="shopping" style="height: auto; width: 100%; "onclick="currentSlide(1)" >
+  </div>
+
+  <div class="column5">
+    <img img class="demo cursor" src="img/New2-Small.png" alt="shopping" style="height: auto; width: 100%;" onclick="currentSlide(2)" >
+  </div>
+ <div class="column5">
+    <img img class="demo cursor" src="img/New3-Small.png" alt="shopping" style="height: auto; width: 100%;" onclick="currentSlide(3)" >
+  </div>
+  
+  </div>
+  </div>
+
+</div>
+
+ <div class="item7">
+
+   <p class="p10">Max Infinity Series</p>
+
+
+     <p class="p11">130$</p>
+   
+     <button class="buttonplus">+</button>
+
+<div class="row2">
+ <div class="con">
+
+  <div class="column4">
+    <p class="p13">US 10</p>
+  </div>
+
+  <div class="column4">
+    <p class="p12">US 9</p>
+  </div>
+
+  <div class="column4">
+    <p class="p13">US 8</p>
+  </div>
+  
+  <div class="column4">
+    <p class="p13">US 7</p>
+  </div>
+
+  <div class="column4">
+    <p class="p12">US 6</p> 
+  </div>
+
+ </div>
+</div>
+
+<p class="p14">The Max Infinity Series features Tuned Air for the right amount of cushioning where you need it. Born in 1998, the Max shoes quickly became an icon, with its energetic design lines and striking profile.</p>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+  </body>
+</html>

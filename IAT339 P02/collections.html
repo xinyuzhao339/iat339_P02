@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AZ. Shoe Collection</title>
+    <link rel="stylesheet"  href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grid.css">
+
+</head>
+
+<body>
+
+
+
+ <div class="container2">
+ 
+   
+</div>
+   
+
+
+<div class="pos">
+    <div class="nav">
+
+      <div class="container2">
+        
+        <h1>AZ.</h1> 
+           <a href="ShoppingCard.html"><img class="sh" src="img/shopping.png" alt="shopping" width="30" height="30"></a>  
+           <a href="Sign In.html"><p class="login">login</p></a>
+        
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle"/>
+         <div class="menu">
+          <a href="home.html">home</a>
+          <a class="active" href="collections.html">collection</a>
+          <a href="contact.html">contact</a>
+
+         </div>
+        </div>
+      </div>
+</div>
+
+
+<div class="grid-container">
+  <div class="item1">
+    <h2>Title</h2>
+  </div>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<hr>
+
+
+
+<div id="myBtnContainer">
+  <button class="btnc active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btnc" onclick="filterSelection('Pink')"> Pink</button>
+  <button class="btnc" onclick="filterSelection('Black')"> Black</button>
+  <button class="btnc" onclick="filterSelection('Gray')"> Gray</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column Pink">
+    <div class="content">
+         <a href="Pink1.html"><img src="img/Pink1.png"  alt="Mountains" style="width:100%"></a>
+
+      <h4>Pink Max 737</h4>
+      <p>Easy Running</p>
+    </div>
+  </div>
+  <div class="column Pink">
+    <div class="content">
+     <a href="Pink2.html"><img src="img/Pink2.png"  alt="Mountains" style="width:100%"></a>
+
+      <h4>Renew Power</h4>
+      <p>Fast Running</p>
+    </div>
+  </div>
+
+  <div class="column Pink">
+    <div class="content">
+       <a href="Pink3.html"><img src="img/Pink3.png"  alt="Mountains" style="width:100%"></a>
+
+      <h4>Pink Max Lite</h4>
+      <p>Summer Casual Run</p>
+    </div>
+  </div>
+  
+  <div class="column Black">
+    <div class="content">
+         <a href="Black1.html"><img src="img/Black1.png"  alt="Mountains" style="width:100%"></a>
+
+      <h4>Black Force 107</h4>
+      <p>New Tech Running</p>
+    </div>
+  </div>
+  <div class="column Black">
+    <div class="content">
+      <a href="Black2.html"><img src="img/Black2.png"  alt="Mountains" style="width:100%"></a>
+
+      <h4>Zoom Fly</h4>
+      <p>Soft Material</p>
+    </div>
+  </div>
+  <div class="column Gray">
+    <div class="content">
+      <a href="Gray.html"><img src="img/Gray.png"  alt="Mountains" style="width:100%"></a>
+
+      <h4>Grey Classic</h4>
+      <p>Classic Running</p>
+    </div>
+  </div>
+
+  
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+  
+</html>
+
